@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RU: GDAL - Geospatial Data Abstraction Library</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RU
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="pages.html"><span>Описания</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GDAL - Geospatial Data Abstraction Library </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><center><b>Select language</b>: <a href="index.html">[English]</a>[Russian]<a href="index_br.html">[Portuguese]</a></center><p> <img src="gdalicon.png" alt="GDAL"> &mdash; это библиотека для работы с растровыми географическими форматами файлов данных. GDAL распространяется <a href="../www.osgeo.org/default.htm">Open Source Geospatial Foundation</a> на условиях лицензии <a href="../trac.osgeo.org/gdal/wiki/FAQGeneral#WhatlicensedoesGDALOGRuse">X/MIT</a> , то есть является проектом с <a href="../www.opensource.org/default.htm">открытым исходным кодом</a>. Как библиотека GDAL предоставляет вызывающему приложению <a class="el" href="gdal_datamodel_ru.html">единую обобщённую модель данных</a> для всех поддерживаемых форматов файлов данных. Помимо этого в состав GDAL входит <a href="gdal_utilities.html" class="el">набор вспомогательных программ</a>, вызываемых из командной строки, для преобразования и обработки данных. Описание выпуска GDAL/OGR 2.0.1 (сентябрь 2015) можно найти на странице <a href="../trac.osgeo.org/gdal/wiki/Release/2.0.1-News">новостей</a>.</p>
+<p>Связанная с GDAL библиотека <a href="ogr">OGR</a> (исходные тексты которой поставляются вместе с GDAL) предоставляет сходные возможности для работы с векторными данными. Начиная с версии 2.0 обе части бибилиотеки (GDAL и OGR) еще более интегрированы. Документация на GDAL 1.X доступна по <a href="../gdal.org/1.11/index.html">этой ссылке</a>. </p>
+<p>Главная страница: <a href="default.htm">http://www.gdal.org</a><br />
+ Загрузить: <a href="../ftp@ftp.remotesensing.org/gdal">по протоколу ftp из remotesensing.org</a>, <a href="../download.osgeo.org/gdal">по протоколу http из download.osgeo.org</a>.</p>
+<h1><a class="anchor" id="index_userdocs_ru"></a>
+Документация для пользователей</h1>
+<ul>
+<li>
+<a href="../trac.osgeo.org/gdal/default.htm">Вики</a> - Документация и советы, предоставленные пользователями и разработчиками. </li>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries">Загрузить</a> &mdash; Готовые исполняемые файлы. </li>
+<li>
+<a href="formats_list.html">Поддерживаемые растровые форматы</a> (142 драйвера) : <a href="frmt_gtiff.html">GeoTIFF</a>, <a href="frmt_hfa.html">Erdas Imagine</a>, <a href="frmt_ecw.html">ECW</a>, <a href="frmt_mrsid.html">MrSID</a>, <a href="frmt_jp2openjpeg.html">JPEG2000</a>, <a href="frmt_dted.html">DTED</a>, <a href="frmt_nitf.html">NITF</a>, <a href="drv_geopackage_raster.html">GeoPackage</a>, ... </li>
+<li>
+<a href="ogr_formats.html">Поддерживаемые векторные форматы</a> (84 драйвера): <a href="drv_shapefile.html">ESRI Shapefile</a>, <a href="drv_sde.html">ESRI ArcSDE</a>, <a href="drv_openfilegdb.html">ESRI FileGDB</a>, <a href="drv_mitab.html">MapInfo (tab and mid/mif)</a>, <a href="drv_gml.html">GML</a>, <a href="drv_libkml.html">KML</a>, <a href="drv_pg.html">PostGIS</a>, <a href="drv_oci.html">Oracle Spatial</a>, <a href="drv_geopackage.html">GeoPackage</a>, ... </li>
+<li>
+<a href="gdal_utilities.html">Вспомогательные программы для растров</a> : <a href="gdalinfo.html">gdalinfo</a>, <a href="gdal_translate.html">gdal_translate</a>, <a href="gdaladdo.html">gdaladdo</a>, <a href="gdalwarp.html">gdalwarp</a>, ... </li>
+<li>
+<a href="ogr_utilities.html">Вспомогательные программы для векторов</a> : <a href="ogrinfo.html">ogrinfo</a>, <a href="ogr2ogr.html">ogr2ogr</a>, <a href="ogrtindex.html">ogrtindex</a>, ... </li>
+<li>
+<a href="gnm_utilities.html">Вспомогательные программы для работы с сетевой моделью</a> : <a href="gnmmanage.html">gnmmanage</a>, <a href="gnmanalyse.html">gnmanalyse</a>, ... </li>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/FAQ">GDAL FAQ</a> </li>
+<li>
+Модели <a href="gdal_datamodel_ru.html">растровых</a> и <a href="ogr_arch.html">векторных</a> данных и архитектура </li>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/GovernanceAndCommunity">Сообщество GDAL/OGR и управление проектом</a> </li>
+<li>
+<a href="../www.osgeo.org/search_profile@SET=1&MUL_TECH[0]=00013">Списки компаний, предоставляющих услуги с использованием GDAL</a> (не проверено) </li>
+<li>
+<a href="credits.html">Благодарности</a> </li>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/SoftwareUsingGdal">Программное обеспечение, использующее GDAL</a> </li>
+</ul>
+<h1><a class="anchor" id="index_devdocs_ru"></a>
+Документация для разработчиков</h1>
+<ul>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/BuildHints">Сборка GDAL из исходных текстов</a>. </li>
+<li>
+<a href="../trac.osgeo.org/gdal/wiki/DownloadSource">Загрузить</a> исходные тексты. </li>
+</ul>
+<h2><a class="anchor" id="index_devdocs_tutorials"></a>
+Tutorials</h2>
+<ul>
+<li>
+Разделы по растрам: <ul>
+<li>
+<a href="gdal_tutorial_ru.html">Руководство по API работы с растрами</a> </li>
+<li>
+<a href="gdal_drivertut.html">Создание драйвера для работы с растром</a> </li>
+<li>
+<a href="gdal_vrttut.html">Формат виртуальных растров (VRT)</a> </li>
+<li>
+<a href="warptut.html">Руководство по GDAL Warp API</a> (Перепроецирование, ...) </li>
+</ul>
+</li>
+<li>
+Разделы по векторам: <ul>
+<li>
+<a href="ogr_apitut.html">Руководство по API работы с векторными данными</a> </li>
+<li>
+<a href="ogr_drivertut.html">Создание драйвера для работы с векторными данными</a> </li>
+<li>
+<a href="drv_vrt.html">Формат виртуальных векторных данных (VRT)</a> </li>
+<li>
+<a href="ogr_feature_style.html">OGR - Спецификация языка описания стилей</a> </li>
+</ul>
+</li>
+<li>
+Разделы по географической сетевой модели: <ul>
+<li>
+<a href="gnm_arch.html">Основы географической сетевой модели</a> </li>
+<li>
+<a href="gnm_tut.html">Руководство по API работы с сетевой моделью</a> </li>
+</ul>
+</li>
+<li>
+<a href="osr_tutorial.html">Руководство по проекциям и системам координат</a> (OSR - OGRSpatialReference) </li>
+</ul>
+<h2><a class="anchor" id="index_devdocs_api"></a>
+Документация по API</h2>
+<ul>
+<li>
+<a href="hierarchy.html">Документация по API</a> </li>
+<li>
+<a href="gdal_8h.html">gdal.h: C API растров</a> </li>
+<li>
+<a href="ogr__api_8h.html">ogr_api.h: C API векторных данных</a> </li>
+<li>
+<a href="gdal__alg_8h.html">gdal_alg.h: C API алгоритмов GDAL</a> </li>
+<li>
+<a href="classGDALDataset.html">GDALDataset C++ API</a> </li>
+<li>
+<a href="classGDALRasterBand.html">GDALRasterBand C++ API</a> </li>
+<li>
+<a href="classOGRLayer.html">OGRLayer C++ API</a> </li>
+<li>
+Диалект <a href="ogr_sql.html">OGR SQL</a> и диалект <a href="ogr_sql_sqlite.html">SQLITE SQL</a> </li>
+</ul>
+<h1><a class="anchor" id="foss4g"></a>
+Конференция</h1>
+<p> 
+<table border="0" cellspacing="4" cellpadding="4">
+
+<tr><td><a href="../2016.foss4g.org/default.htm">
+<img src="../wiki.osgeo.org/images/f/ff/Foss4g2016_logo_squared.png" alt="FOSS4G 2016" border="0">
+</a></td>
+
+<td><a href="../2016.foss4g.org/default.htm">FOSS4G 2016</a> основная ежегодная
+конференция разработчиков открытого и свободного географического программного
+обеспечения. Будут представлены доклады и проведены семинары по GDAL/OGR,
+конференцию посетят многие участники сообщества GDAL/OGR. Это <i>важное</i>
+событие для всех, кто интересуется GDAL/OGR и другими свободными технологиями
+в области географии и картографии и хочет познакомиться с участниками этого
+сообщества. Конференция пройдет в Бонне, Германия, <strong> с 24 по 26 августа 2016</strong>.</td>
+</table>
+</p>
+<h1><a class="anchor" id="index_maillist_ru"></a>
+Список рассылки</h1>
+<p>Для отслеживания основных событий в разработке GDAL/OGR предназначен небольшой по объёму список рассылки <a href="../lists.osgeo.org/mailman/listinfo/gdal-announce/default.htm">gdal-announce</a>.</p>
+<p>Для обсуждения процесса разработки и вопросов по использованию GDAL и связанных с проектом технологий существует список рассылки <a href="#" onclick="location.href='mai'+'lto:'+'gda'+'l-'+'dev'+'@l'+'ist'+'s.'+'osg'+'eo'+'.or'+'g'; return false;">gdal-dev@lists.osgeo.org</a>. Подписаться и просмотреть архивы рассылки можно <a href="../lists.osgeo.org/mailman/listinfo/gdal-dev/default.htm">на специальной странице</a>. Список рассылки также доступен в режиме только для чтения по протоколу NNTP <a href="news_3A//news.gmane.org/gmane.comp.gis.gdal.devel">news://news.gmane.org/gmane.comp.gis.gdal.devel</a> и по HTTP <a href="../news.gmane.org/gmane.comp.gis.gdal.devel">http://news.gmane.org/gmane.comp.gis.gdal.devel</a>. Архив начиная с 2005 года доступен на <a href="../osgeo-org.1560.n6.nabble.com/GDAL-Dev-f3742093.html">Nabble</a>.</p>
+<p>Многих пользователей и разработчиков GDAL/OGR часто можно найти на IRC канале <a href="irc:irc.freenode.net/#gdal">#gdal</a> сервера irc.freenode.net.</p>
+<h1><a class="anchor" id="index_bugs_ru"></a>
+Отчёты об ошибках</h1>
+<p>Об ошибках GDAL <a href="../trac.osgeo.org/gdal">можно сообщить</a>, и <a href="../trac.osgeo.org/gdal/report/1@sort=ticket&asc=0">просмотреть</a> при помощи системы Trac.</p>
+<h1><a class="anchor" id="index_bindings_ru"></a>
+Интерфейсы для различных языков программирования</h1>
+<p>Список интерфейсов для различных языков программирования находится в <a href="../trac.osgeo.org/gdal/#GDALOGRInOtherLanguages">Вики GDAL</a>. </p>
+</div></div><!-- contents -->
+<hr>
+Generated for GDAL by
+<a href="../www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8.
+</body>
+</html>
