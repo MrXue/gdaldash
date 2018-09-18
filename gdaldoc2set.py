@@ -22,7 +22,7 @@ for tag in soup.find_all('a', {'href':any}):
     if len(name) > 1:
         path = tag.attrs['href'].strip()
         if path != 'annotated.html':
-            cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?,?,?)', (name, 'func', path))
+            cur.execute('INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?,?,?)', (name, 'Class', path))
             print('name: {}, path: {}'.format(name, path))
 
 conn.commit()
